@@ -1,0 +1,257 @@
+   3/7/24
+*React :
+-it is javascript library.
+-it is use to make rich UI.
+-it create Single Page Application(SPA).
+-it is not framework
+
+
+-in react only index.html page will display. 
+
+
+Featires of React 
+1. it work on Component Base Architecture.
+2. it use Virtual DOM.
+3. it is faster than other app.
+
+
+**technology pre-requisit.
+-html, css, js (basic,ES5 and Es6) oops,
+
+**Software pre-requisit 
+-nodejs,npm,CRA
+
+*there are two method to create react project
+1.npx: no need to install configuration file.
+ step1: npx create-react-app appname
+ step2: cd appname
+ step3: npm start 
+
+2.npm:nee to install configuration file 
+ step1: npm install -g create-react-app 
+ step2: create-react-app appname
+ step3: cd appname
+ step4: npm start
+
+node_modules: all dependencies and dev-dependencies will install in this folder
+package.json:all dependencies entry will found here.
+package-lock.json: it contain detail description of all dependencies.
+
+Component: -it is partial part of react-app 
+           -it can be any part of react-app which we can re-use multiple time. 
+           -App is root Component in  react-project 
+
+-in React we have two types of Component.
+1.function Component: when your main focus on UI Design in that case we use Function Component.
+2.class Component: when need to write complex logic, and deal with essestial data in that case we use class Component.
+
+*How to display or render Component output.
+-to display Component output individually for this first import Component and then write its name as tag.
+
+Note: while createing Component its filename must start capital letter.
+
+*How to create function Component and display its output
+*How to create class Component and display its output
+
+*JSX(javascript and XML) : 
+-it makes react code easy and allows us to write html code in react Component.
+-in in jsx we have use one parent element to wrap multiple child element , parent element can be block element like div,p, h1-h6 etc.
+
+*props : 
+-it is a parameter or functional parameter which is use to pass data inside Component.
+-it return data in object formate.
+-we can access props in function Component by writting props.propsName.
+-we can access props in class Component by writting this.props.propsName.
+
+Task-1:create MyDetailsComp (fc) include name,email,contact,address props display its output 
+Task-2:create CompanyDetails (cl) include cpName,cpEmail,cpContact,cpAdaddress props display its output 
+
+*state:
+-it is use to handle essentail data in class Component.
+-it return object type of data to us in class Component.
+-it always write in class constructor.
+
+*setState() method: it is use to manipulate state data.
+
+*destructuring : createing constant variable and storing data in it.
+                -we can destructure array and object values 
+                -while destructuring its constant variable must be same as its keyname.
+
+*how to destructure state                 
+*how to destructure props 
+
+*method and event in react 
+
+MyCounterComp 
+Render : render means display Component output 
+*Conditional Render : display Component output on the basis of condition.
+1.if else: in this if condition is reue then it will display if block, otherwise else block.
+
+2.element as variable: in this we store data in variable and display that variable as element.
+
+3.use of ternary: it is an shorthand syntax for if else.
+                  syntax:  (condition) ? truepart : falsepart;
+
+4.short circuit (&&): in this if condition is true then and only then it will render Component output.
+
+*Component Interaction:
+we send data from one Component another Component.
+-we send state data as props 
+-send method as props
+
+*saw extension in vs code for creating Component
+rce : which is use to create class Component
+rconst : which is use to create constructor,with super methode and state.
+rfce: it will create function Component.
+rafce:it will generate arrow function Component.
+
+
+Src folder 
+   -Component folder
+   -shared folder 
+       -images folder 
+       -constant folder 
+          -constantData.js
+       -database folder  
+
+MyImagesComp (cl)        
+=====================================================
+4/7/24
+
+Fragment: it is an alrernative option of jsx. 
+
+HOC (Heigher Order Component):
+-when you have same bussiness and want want to share with multiple 
+Component in that case we use HOC.
+-in HOC we share logic from function Component to class Component.
+
+*Hooks In React : 
+-in react hooks allows us to use class Component feature in function Component.
+-we can use state in function by using hooks.
+-there are 8 hooks  
+-Hooks introduces in react version-16
+
+*Rules to use Hooks 
+-Hooks will work on in function Component.
+-Hooks can not be render Conditionaly.
+-Hooks always use in Top Level Component
+
+list of hooks 
+1.UseState Hook:
+2.UseEffect Hook:
+3.UseContext hook:
+4.UseRef Hook:
+5.useReducer Hook:
+6.UseMemo Hook:
+7.useCallback Hook: 
+8.Custom Hook :
+
+*useState Hook :
+-we can use state in function Component by using useState Hook.
+-it gives two parameter 1. current-State, 2.function to update current state.
+-in useState we can pass number,string,bolean,array,object type of data.
+-to use it first we have to import it. 
+
+*Virtual DOM :
+
+*useEffect Hook: 
+-it is use to perform sideeffect function or operation in function Component.
+-if you want to perform some operation after Component render, in that case we use it.
+-useEffect Hooks execute after Component render as well as state value change.
+-it execute at leat once in its life after after Component render.
+-it perform operation of componentDidMount,ComponentWillUpdate and ComponentWillUnmount lifecycle methode which we use in class Component.
+-it takes two value 1. callback function, 2.dependencies
+syntax: useEffect(()=>{},dependencies)
+
+case1: when no dependencies value pass ,componentDidMount,ComponentWillUpdate
+useEffect(()=>{
+        console.log("useEffect call");
+        setCount(count+1);
+    })
+
+case2: use effect Hooks execute only once.
+       -we pass dependencies as blanck array 
+useEffect(()=>{
+        console.log("useEffect call");
+        setCount(count+1);
+    },[]);
+
+case3:when i want to execute useEffect Hook as i want 
+     -in this we pass state or props as dependencies value.
+useEffect(()=>{
+        console.log("useEffect call");
+        setCount(count+1);
+    },[state or props]);
+
+*form Validation 
+
+Hw: lname,email,password,contact eprform form validation in react .
+
+*How to use Bootstrap in react 
+step1: install Bootstrap 
+      npm i Bootstrap 
+step2: go to index.js file and import Bootstrap path.      
+        import 'bootstrap/dist/css/bootstrap.min.css';
+step3: use bootstrap classes in Component
+
+*Routing : navigation of Component 
+          -display Component output or view by writting its path name in browser url.
+          -to perform routing in react we have use react-router-dom library. 
+          -to install it we use fallow command
+           npm install react-router-dom
+            
+types of routing 
+1.naming routing: display Component output by writting its path in browser url.
+
+2.default routing: display Component output by default ,no need to write it path name in browser url.ita path will be blank.
+
+3.parameterize routing: display Component output by passing parameter with routing path.
+
+4.child routing: defining one routing inside another routing.
+                 -to display child routing Component output we have to insert <Outlet /> directory in parent routing component return block.
+
+5.wild-card routing: when user enter wrong path name in browser url then we can decide which component should display. 
+-in its path name we write "*".
+-wild card routing must be last routing , its below routing never work.
+
+FormValComp fc
+
+
+Src folder 
+   -Routing 
+   -layout folder 
+     -PageNotFoundComp 
+     -NavComp
+     -LoginComp
+   -Component 
+   -shared 
+   -Hooks folder 
+       -ReactHooksComp (fc)
+       -UseStateComp (fc)
+       -UseEffectComp (fc)
+       
+
+
+git remote add origin https://github.com/Panchashil/YCP-React.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
