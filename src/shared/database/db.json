@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "pname": "Laptop",
+      "pprice": 55000,
+      "pcompany": "Hp",
+      "address": "Mumbai"
+    },
+    {
+      "id": 2,
+      "pname": "Adaptor",
+      "pprice": 10000,
+      "pcompany": "Hp",
+      "address": "Pune"
+    },
+    {
+      "pname": "Mobile",
+      "pprice": "30000",
+      "pcompany": "oppo",
+      "address": "Pune",
+      "id": 3
+    },
+    {
+      "pname": "Advanced Remote",
+      "pprice": "90000",
+      "pcompany": "Toshiba",
+      "address": "Nariman Point AIT",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "uid": "admin@gmail.com",
+      "upass": "admin@123"
+    },
+    {
+      "id": 2,
+      "uid": "king@gmail.com",
+      "upass": "king@123"
+    },
+    {
+      "id": 3,
+      "uid": "hero@gmail.com",
+      "upass": "hero@123"
+    }
+  ]
+}

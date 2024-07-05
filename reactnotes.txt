@@ -234,7 +234,54 @@ Src folder
 
 git remote add origin https://github.com/Panchashil/YCP-React.git
 
+=================================================================================
+5/7/24
+*Use of Link directory
+*React App layout 
 
+C -create(post)
+R -Read(get)
+U -Update(put)
+D -delete(delete)
+
+*Server (Json Server)
+-how to install json-server 
+npm install -g json-server
+
+*How to upload json data on json-server 
+cd src/shared/database (press enter)
+json-server --watch -p 8888 db.json
+
+*install axios library : it allows us to make request form react to server
+npm i axios 
+
+src folder
+ CRUD folder 
+  PaductDashComp fc 
+
+*Material UI: it provide inbuilt component as well as it provide icon 
+-how to install MUI
+npm install @mui/material @emotion/react @emotion/styled
+
+*how to install mui icon
+npm install @mui/icons-material
+
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import AddIcon from '@mui/icons-material/Add';
+
+*we perform delete request 
+*we perform post request 
+*we perform put request 
+
+*use of usenavigation 
+*use of UseParamas 
+
+
+*Redux: 
+-store :
+-action : 
+reducer :
 
 
 
